@@ -4,7 +4,7 @@
     box-sizing: border-box;
     @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto&display=swap');
     font-family: 'Roboto', sans-serif;
-
+    
 }
 .clearfix{
     content: "";
@@ -30,42 +30,32 @@
 .f-space-between{
     justify-content: space-between;
 }
-.container{
-    background-color: lightblue;
-    width: 100vw;
-    height: 100vh;
-    position: relative;
+/* CONTAINER WEB APP */
+.container-web-app{
+   height: 100vh;
 }
-.player{
-    position: absolute;
-    background-color: gray;
-    bottom: 0;
-    width: 100%;
-    height: 10%;  
-    padding: 15px;  
+/* CONTAINER UP */
+.container-up{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
 }
-.section-song{
+/* SECTION LEFT */
+.section-left{
     background-color: blue;
-    position: absolute;
-    right: 0;
-    width: 85%;
-    height: 100%;
+    width: 15%;
+    height: 90vh;
 }
 .side-bar{
-    position: absolute;
-    left: 0;
-    width: 15%;
-    height: 90%;
-    background-color: orangered;
+    background-color: #000000;
     padding: 20px;
+    height: 100%;
+    font-size: 1rem;
 }
-.header{
-    background-color: yellow;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 85%;
-    height: 15%;
+ul{
+    list-style: none;
+    margin-top: 20px;
+    line-height: 30px;
 }
 .playlist-container{
     color: white;
@@ -73,17 +63,93 @@
 .user-container{
     color: white;
 }
-.premium-btn{
-    border-style: none;
-    padding: 10px;
-    border-radius: 150px;
-    background-color: purple;
+.user-name{
+    align-items: center;
+    display: flex;
+    margin-top: 5px;
+}
+.install{
+    margin-bottom: 10px;
+    opacity: 50%;
+}
+hr{
+    opacity: 50%;
+}
+.profile-img{
+    width: 30px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 5px;
+}
+.logo{
+    width: 100%;
+}
+/* SECTION RIGHT */
+.section-right{
+    background-color: #151922;
+    flex-grow: 1;
+    height: 90vh;
+    overflow-y: auto;
+}
+.container-genre{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.genre{
+    display: flex;
+    gap: 20px;
+    color: white;
+    opacity: 50%;
+}
+.Recently-played-sec{
+    margin: 30px;
     color: white;
 }
+/* CARD */
+.card{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.subtitle{
+    opacity: 70%;
+}
+.card-img{
+  width: 250px;
+  height: 250px;
+}
+.card-container{
+    display: flex;
+    width: calc(100%/6);
+}
+.rounded{
+    border-radius: 50%;
+}
+/* HEADER */
 .header{
-    justify-content: flex-end;
+    width: 100%;
+    height: 15%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: black;
     align-items: center;
-    padding-right: 30px;
+    justify-content: right;
+}
+.premium-btn{
+    border-style: none;
+    
+    padding: 10px;
+    border-radius: 150px;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+}
+/* PLAYER */
+.player{
+    background-color: green;
+    height: 10%;
 }
 .bg-purple{
     background-color: purple;
