@@ -150,6 +150,7 @@ hr{
 .player{
     background-color: green;
     height: 10%;
+    color: white;
 }
 .bg-purple{
     background-color: purple;
@@ -159,13 +160,30 @@ hr{
 }
 .player-left{
     width: 20%;
+    display: flex;
+    align-items: center;
+}
+.img-player{
+    width: 50px;
+    margin: 10px;
+}
+.action-song{
+    margin: 20px;
 }
 .player-mid{
-    width: 40%;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+.fa-play{
+    border: 3px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.fa-space{
+    margin: 10px;
 }
 .mid-btn{
     margin-bottom: 10px;
@@ -176,7 +194,28 @@ hr{
     margin-bottom: 10px;
     width: 80%;
     margin: auto;
+    
+}
+.bar{
+    border: 2px solid white;
+    border-radius: 20px;    
+    width: 50%;
+    margin: auto;
+    opacity: 50%;
+    position: relative;
+}
+.inside-bar{
+    border: 3px solid black;
+    border-radius: 20px;    
+    width: 25%;
+    
+    opacity: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
 }
 .player-right{
     width: 20%;
 }
+.
