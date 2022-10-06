@@ -42,8 +42,7 @@
 }
 /* SECTION LEFT */
 .section-left{
-    background-color: blue;
-    width: 15%;
+    width: 300px;
     height: 90vh;
 }
 .side-bar{
@@ -51,6 +50,7 @@
     padding: 20px;
     height: 100%;
     font-size: 1rem;
+    width: 300px
 }
 ul{
     list-style: none;
@@ -105,6 +105,9 @@ hr{
 .Recently-played-sec{
     margin: 30px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 /* CARD */
 .card{
@@ -121,7 +124,7 @@ hr{
 }
 .card-container{
     display: flex;
-    width: calc(100%/6);
+    flex-wrap: wrap;
 }
 .rounded{
     border-radius: 50%;
@@ -148,7 +151,7 @@ hr{
 }
 /* PLAYER */
 .player{
-    background-color: green;
+    background-color: #282828;
     height: 10%;
     color: white;
 }
@@ -159,9 +162,12 @@ hr{
     background-color: green;
 }
 .player-left{
-    width: 20%;
+    width: 33%;
     display: flex;
     align-items: center;
+}
+.info-song{
+    
 }
 .img-player{
     width: 50px;
@@ -171,7 +177,7 @@ hr{
     margin: 20px;
 }
 .player-mid{
-    width: 100%;
+    width: 33%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -187,35 +193,56 @@ hr{
 }
 .mid-btn{
     margin-bottom: 10px;
-    width: 40%;
+    width: 100%;
     margin: auto;
 }
 .mid-btn2{
-    margin-bottom: 10px;
-    width: 80%;
+    margin-bottom: 20px;
+    width: 100%;
     margin: auto;
     
 }
 .bar{
-    border: 2px solid white;
+    border: 2px solid gray;
+    color: gray;
     border-radius: 20px;    
-    width: 50%;
+    width: 200px;
     margin: auto;
     opacity: 50%;
     position: relative;
 }
 .inside-bar{
-    border: 3px solid black;
+    border: 2px solid white;
     border-radius: 20px;    
     width: 25%;
-    
     opacity: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -2px;
+    left: -2px;
     
 }
 .player-right{
-    width: 20%;
+    width: 33%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
-.
+@media  screen and (max-width:768px){
+    .logo{
+        width: 120px;
+    }
+    .section-left{
+        width: 20%;
+    }
+    .mid-btn{
+        
+    }
+    .action-song{
+        display: flex;
+        gap: 10px;
+    }
+    .fa-space{
+        margin: 3px;
+    }
+
+}
