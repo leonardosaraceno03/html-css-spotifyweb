@@ -96,8 +96,15 @@ hr{
     justify-content: space-around;
     margin: auto;
 }
+.add{
+    padding: 5px 8px;
+    background-color: gray;
+    font-size: 1.5rem;
+    margin-right: 3px;
+}
 .genre{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     color: white;
     opacity: 50%;
@@ -162,12 +169,8 @@ hr{
     background-color: green;
 }
 .player-left{
-    
     display: flex;
     align-items: center;
-}
-.info-song{
-
 }
 .img-player{
     width: 50px;
@@ -206,7 +209,6 @@ hr{
     border: 2px solid gray;
     color: gray;
     border-radius: 20px;    
-    width: 100px;
     margin: auto;
     opacity: 50%;
     position: relative;
@@ -229,6 +231,9 @@ hr{
 }
 .logo-small{
     display: none;
+}
+.player-right > .bar{
+    width: 70px;
 }
 @media  screen and (max-width:768px){
     .logo{
@@ -266,8 +271,15 @@ hr{
     hr{
         width: 170px;
     }
-    .player-right > .bar{
-        max-width: 50px;
+    .bar{
+        max-width: 100px;
+        min-width: 20px;
+    }
+    .fa-list{
+        display: none;
+    }
+    .info-song{
+        font-size: 0.8rem;
     }
 }
 @media  screen and (max-width:425px){
@@ -294,11 +306,20 @@ hr{
         display: none;
     }
     .profile-img{
-        width: 25px;
-        
+        width: 25px; 
     }
     .card-img{
         width: 120px;
         height: 120px;
+    }
+    
+    .action-song > .fa-folder{
+        display: none;
+    }
+    .info-song{
+        font-size: 0.8rem;
+    }
+    .player-right > .bar{
+        display: none;
     }
 }
